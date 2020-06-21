@@ -18,4 +18,10 @@ export const  debounce = function(method,context, delay){
         }, delay);
     }
 }
+export const clearSpace = (str) =>{
+    let reg = /\s+/g
+    let res = str.replace(reg,'')
+    return res
+}
+
   

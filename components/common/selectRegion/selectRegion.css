@@ -1,0 +1,23 @@
+.selectRegion{
+  padding:3px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+   
+}
+.title{
+  padding:0 5px;
+  min-width:5%;
+}
+.btns{
+  flex:1;
+  padding:0 5px;
+}
+.ant-btn{
+  margin:0 5px 5px;
+}
+.btnFocus{
+  border: 1px solid #40a9ff;
+  color:#40a9ff;
+  /* background: #40a9ff; */
+}

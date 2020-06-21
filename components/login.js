@@ -9,7 +9,6 @@ import { login } from '../actions/header'
 // const namespace = 'header'
 
 // const mapStateToProps = (state) => {
-//   console.log(state)
 //   return{
 //     ...state[namespace]
 //   }

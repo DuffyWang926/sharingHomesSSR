@@ -5,10 +5,10 @@ import {all, call, put, take, takeLatest} from 'redux-saga/effects'
 import es6promise from 'es6-promise'
 import 'isomorphic-unfetch'
 
-import {  LOGIN } from '../actionTypes/header'
+import {  LOGIN, TEST_NODE } from '../actionTypes/header'
 import { loginSuccess  } from '../actions/header'
 import { failure } from '../actions/actions'
-import {getUserData} from '../api/header'
+import {getUserData, getNodeData} from '../api/header'
 
 es6promise.polyfill()
 
@@ -29,7 +29,25 @@ function * loginSaga () {
     takeLatest(LOGIN, loadDataSaga)
   ])
 }
+
+function * loadNodeSaga (action) {
+  const { payload } = action
+  try {
+    const {data} = yield call(getNodeData(payload))
+
+    yield put(loginSuccess(data))
+  } catch (err) {
+    yield put(failure(err))
+  }
+}
+
+function * nodeSaga () {
+  yield all([
+    takeLatest(TEST_NODE, loadNodeSaga)
+  ])
+}
 const headerSaga = [
-  loginSaga
+  loginSaga,
+  nodeSaga
 ]
 export default headerSaga

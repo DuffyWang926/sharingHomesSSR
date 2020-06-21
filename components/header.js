@@ -1,13 +1,12 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 
-import { changeTab } from '../actions/header'
+import { changeTab,testNode } from '../actions/header'
 import LogIn from './login'
 import _ from 'lodash';
 // import  logo from '../public/images/lenovo.png'  
 const namespace = 'header'
 const mapStateToProps = (state) => {
-  console.log(state)
   return{
     ...state[namespace]
   }
@@ -61,7 +60,7 @@ class Header extends Component {
   }
   onTabClick = (i) => { 
     this.props.dispatch(changeTab(i))
-    // this.props.logIn({name:'wefRoot',password:'123456'})
+    this.props.dispatch(testNode())
   }
   onLogIn = () =>{
     this.setState({

@@ -1,12 +1,12 @@
 import {connect} from 'react-redux'
-import Counter from './counter'
 import Header from './header'
+import SearchProducts from './searchProducts'
 
 function Page () {
   return (
     <div>
       <Header />
-      <Counter />
+      <SearchProducts/>
     </div>
   )
 }

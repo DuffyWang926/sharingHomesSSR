@@ -1,0 +1,26 @@
+.sortItem{
+  padding:3px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  cursor: pointer;
+   
+}
+.selectItem{
+  color:red;
+}
+.sortType{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+.sortType >div{
+  margin-top:-5px;
+}
+.checked{
+  color:red;
+}
+.unSelected{
+  color:#999;
+}

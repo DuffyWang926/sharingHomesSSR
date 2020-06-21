@@ -1,0 +1,11 @@
+.roomList{
+  padding:3px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+   
+}
+.roomWrapper{
+  flex:0 1 33.3%;
+}

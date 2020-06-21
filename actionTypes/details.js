@@ -1,0 +1,3 @@
+export const MAP_CENTER= 'MAP_CENTER';
+export const MAP_CENTER_SUCCESS= 'MAP_CENTER_SUCCESS';
+

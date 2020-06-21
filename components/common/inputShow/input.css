@@ -1,0 +1,24 @@
+.search{
+    padding:20px 0;
+    margin:auto;
+    width:400px;
+    position:relative;
+  }
+  .searchList{
+    position:absolute;
+    left:0;
+    top:40px;
+    border:1px solid #eee;
+    border-radius:6px;
+    width:100%;
+    min-height:200px;
+    display:none;
+  }
+  .showList{
+    display:block;
+  }
+  .searchInput{
+    height:20px;
+    border-radius:10px;
+    width:100%;
+  }

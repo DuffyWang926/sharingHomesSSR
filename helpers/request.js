@@ -5,6 +5,7 @@ import { errorList } from '../constants/errorHttp'
 
 let service = axios.create({
   // baseURL: process.env.BASE_API, // api 的 base_url
+  
 
   timeout: 5000, // 请求超时时间
   headers:{
@@ -13,6 +14,8 @@ let service = axios.create({
     // "authKey" : localStorage.getItem('authkey'),
     // "appType":5,
     // "version":'1.0.01'
+    'Access-Control-Allow-Origin':'*',
+    'Content-Type': 'application/x-www-form-urlencoded'
   }
 });
 

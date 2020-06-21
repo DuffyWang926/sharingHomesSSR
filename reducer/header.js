@@ -7,12 +7,10 @@ export const exampleInitialState = {
   user: {
     name:''
   },
-  tabList:['browse catalog','quick upload','contract pricing']
+  tabList:['转租房','合租房','找室友','房源发布','租房信用']
 }
 
 function headerReducer (state = exampleInitialState, action) {
-  console.log(action)
-  debugger
   switch (action.type) {
     case CHANGE_TAB:
       return {

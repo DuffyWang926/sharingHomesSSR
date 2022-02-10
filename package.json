@@ -24,7 +24,7 @@
     "next": "9.1.4",
     "next-redux-saga": "3.0.0-beta.1",
     "next-redux-wrapper": "4.0.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "null-loader": "^3.0.0",
     "react": "16.12.0",
     "react-amap": "^1.2.8",
